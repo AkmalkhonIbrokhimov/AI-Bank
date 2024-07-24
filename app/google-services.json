@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "751185749032",
+    "project_id": "easepay-e680f",
+    "storage_bucket": "easepay-e680f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751185749032:android:61a981d67927fd9629811d",
+        "android_client_info": {
+          "package_name": "uz.uzdevai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArnQQV0x9eV3mQ5YXvrPmzO2pTA84xFjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
