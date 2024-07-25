@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
     alias(libs.plugins.google.firebase.crashlytics)
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -35,6 +37,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -48,6 +53,29 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    //firebase
+    //firebase crashltics
     implementation(libs.firebase.crashlytics)
+
+    // Navigation components
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+
+    //Dagger hilt
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
+
+    //Coil
+    implementation(libs.coil)
+
+    //Retrofit, OkHttp, Gson-Converter
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.okhttp)
+
+    //Security
+    implementation(libs.androidx.security.crypto.ktx)
+
+    //MaskedEditText
+    implementation(libs.input.redmadrobot)
+
 }
