@@ -75,7 +75,10 @@ dependencies {
     //Security
     implementation(libs.androidx.security.crypto.ktx)
 
+    // ViewBindingPropertyDelegate
+    implementation(libs.view.binding)
+
     //MaskedEditText
-    implementation(libs.input.redmadrobot)
+
 
 }
